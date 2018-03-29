@@ -14,24 +14,24 @@
       <mt-button icon="more" slot="right"></mt-button>
     </mt-header>
 
-    <mt-tabbar v-model="selected">
-      <mt-tab-item id="1">
-        <i-icon slot="icon" name="icon-Artboard9" symbol></i-icon>
-        外卖
-      </mt-tab-item>
-      <mt-tab-item id="2">
-        <i-icon slot="icon" name="icon-Artboard3" symbol></i-icon>
-        订单
-      </mt-tab-item>
-      <mt-tab-item id="3">
-        <i-icon slot="icon" name="icon-Artboard1" symbol></i-icon>
-        发现
-      </mt-tab-item>
-      <mt-tab-item id="4">
-        <i-icon slot="icon" name="icon-Artboard4" symbol></i-icon>
-        我的
-      </mt-tab-item>
-    </mt-tabbar>
+    <!--<mt-tabbar v-model="selected">-->
+      <!--<mt-tab-item id="1">-->
+        <!--<i-icon slot="icon" name="icon-Artboard9" symbol></i-icon>-->
+        <!--外卖-->
+      <!--</mt-tab-item>-->
+      <!--<mt-tab-item id="2">-->
+        <!--<i-icon slot="icon" name="icon-Artboard3" symbol></i-icon>-->
+        <!--订单-->
+      <!--</mt-tab-item>-->
+      <!--<mt-tab-item id="3">-->
+        <!--<i-icon slot="icon" name="icon-Artboard1" symbol></i-icon>-->
+        <!--发现-->
+      <!--</mt-tab-item>-->
+      <!--<mt-tab-item id="4">-->
+        <!--<i-icon slot="icon" name="icon-Artboard4" symbol></i-icon>-->
+        <!--我的-->
+      <!--</mt-tab-item>-->
+    <!--</mt-tabbar>-->
 
   </div>
 </template>
@@ -47,7 +47,7 @@ export default {
   },
   mounted()
   {
-    console.log("0000000000000000000000")
+//    console.log("0000000000000000000000")
   },
   watch: {
     selected: {
