@@ -5,7 +5,8 @@
 const path = require('path')
 const address = require('address')
 const proxy = require('./proxy')
-const _localhost = address.ip()
+// const _localhost = address.ip()
+const _localhost = "0.0.0.0" // fix by sun
 console.log('本机ip', _localhost)
 
 module.exports = {
@@ -13,7 +14,7 @@ module.exports = {
 
     // Paths
     assetsSubDirectory: 'static',
-    assetsPublicPath: '/',
+    assetsPublicPath: '/agent/',
     proxyTable: proxy.proxyList,
 
     // Various Dev Server settings
@@ -54,7 +55,7 @@ module.exports = {
     // Paths
     assetsRoot: path.resolve(__dirname, '../dist'),
     assetsSubDirectory: 'static',
-    assetsPublicPath: '/',
+    assetsPublicPath: '/agent/',// fix by sun
 
     /**
      * Source Maps

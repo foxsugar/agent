@@ -46,6 +46,16 @@ export function getAgentInfo() {
   })
 }
 
+export function jsapiparam(url) {
+  return fetch({
+    url: '/wechat/jsapiparam',
+    method: 'get',
+    params: {
+      url
+    }
+  })
+}
+
 const apiList = {
   LOGIN,
 }

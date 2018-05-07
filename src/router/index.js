@@ -16,6 +16,8 @@ const Detail = () =>
   import('@/views/Detail')
 const Login = () =>
   import('@/views/Login')
+const Test = () =>
+  import('@/views/Test')
 
 Vue.use(Router)
 Router.prototype.back = function() {
@@ -67,6 +69,11 @@ const router = new Router({
       path: '/login',
       name: 'Login',
       component: Login
+    },
+    {
+      path: '/test',
+      name: 'Test',
+      component: Test
     }
   ]
 })
