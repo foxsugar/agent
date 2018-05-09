@@ -1,6 +1,6 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import { getToken,setToken} from '@/utils/util'
+import {getToken, setToken} from '@/utils/util'
 // const HelloWorld = () => import('@/components/HelloWorld')
 const Home = () =>
   import('@/views/Home')
@@ -20,7 +20,7 @@ const Test = () =>
   import('@/views/Test')
 
 Vue.use(Router)
-Router.prototype.back = function() {
+Router.prototype.back = function () {
   this.isBack = true
   window.history.go(-1)
 }
@@ -73,6 +73,10 @@ const router = new Router({
     {
       path: '/test',
       name: 'Test',
+      query: {
+        sid: 'sid',
+        id: 'id'
+      },
       component: Test
     }
   ]

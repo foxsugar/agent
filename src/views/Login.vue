@@ -7,12 +7,16 @@
   import Vue from 'vue';
   import VueResource from 'vue-resource'
 
+
 export default {
   name: 'login',
   data() {
     return {
 
     }
+  },
+  mounted(){
+
   },
   created(){
 //      let appId = 'wxb9ead0dd1f3ce7ae'//sxp

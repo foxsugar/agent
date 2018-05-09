@@ -6,9 +6,12 @@ import router from './router'
 import './assets/style/main.less'
 import Ivue from './package'
 import VueResource from 'vue-resource'
+import VueJsonp from 'vue-jsonp'
 Vue.use(VueResource)
 
 Vue.use(Ivue)
+Vue.use(VueJsonp)
+
 
 var isDebugMode = process.env.NODE_ENV !== 'production'
 Vue.config.debug = isDebugMode

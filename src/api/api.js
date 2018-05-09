@@ -56,6 +56,16 @@ export function jsapiparam(url) {
   })
 }
 
+export function auth() {
+  return fetch({
+    // url: '/wechat/authorize_base?returnUrl=base',
+    url: '/wechat/authorize?returnUrl=base',
+    method: 'get',
+    params: {
+
+    }
+  })
+}
 const apiList = {
   LOGIN,
 }
